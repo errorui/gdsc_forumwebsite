@@ -1,0 +1,126 @@
+.doubtbtn {
+    width: 100%;
+    background-color: rgb(52, 47, 183);
+    border: none;
+    margin-bottom: 1rem;
+    padding: 12px;
+    font-size: larger;
+    font-weight: 200;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius: 12px;
+    transition: all 100ms ease-in-out;
+}
+.doubtbtn:hover{
+    background-color: white;
+    color: rgb(52, 47, 183)
+}
+
+.modal {
+    position: absolute;
+    /* background: rgb(2, 0, 36); */
+    background: linear-gradient(215deg, rgba(2, 0, 36, 0.759) 0%, rgba(9, 9, 121, 0.7) 34%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    height: 140%;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    display: flex;
+     z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalcontent {
+    background-color: white;
+    padding: 4em 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 23px;
+}
+
+.modalform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.submitdoubt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    border-radius: 12px;
+
+}
+
+.submitdoubt input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 12px ;
+    font-size: 1.5rem;
+    color: rgb(124, 142, 142);
+}
+#area{
+    border-radius: 12px;
+    
+    
+    
+    
+    color: rgb(124, 142, 142);
+    margin-block: 10px;
+}
+input::placeholder {
+    font-weight: 300;
+    font-size: 1.01rem;
+}
+.x{
+    margin-inline:auto ;
+    border-radius: 12px;
+}
+.plus {
+    background-color: rgb(19, 36, 61);
+    text-align: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 2.3rem;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 500ms ease-in;
+}
+.plus:hover{
+    transform: translateY(-5px) scale(1.2);
+    box-shadow: 8px 15px 12px rgba(19, 36, 61, 0.719);
+    margin-block:12px ;
+    border: 1px solid rgb(19, 36, 61);
+    background-color: white;
+    color: rgb(19, 36, 61);
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+    
+    
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #c9f2ed;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(38, 103, 234);
+    border-radius: 14px;
+    height: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(14, 28, 84);
+  }
+  
+  /* For Firefox */
+  

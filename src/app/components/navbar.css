@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --navbar-main:rgb(80, 194, 239);
+    --navbar-main-dark:rgb(29, 67, 193);
+    --navbar-text:white;
+}
+
+.navbar{
+    background-color:var(--navbar-main) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 100px;
+}
+.logo{
+font-size: 2.3rem;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 22px;
+color: var(--navbar-text);
+text-decoration: none;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.nom{
+   
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nom .li{
+   font-size: large;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    color:white;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 900ms ease-in;
+   
+}
+.nom .li:hover{
+    background-color: var(--navbar-text);
+    color: var(--navbar-main);
+}
+.mob .li{
+    
+   font-size: large;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    
+    color:white;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 900ms ease-in;
+   
+}
+.mob .li:hover{
+    background-color: var(--navbar-text);
+    color: var(--navbar-main-dark);
+}
+.mob{
+    display: none;
+    background-color: var(--navbar-main-dark);
+    position: fixed;
+    top: 100px;
+    right: 0;
+    left: 0;
+    
+    height: 200px;
+    flex-direction: column;
+  ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 400ms ease-out;
+}
+.mob 
+.nom .li:hover{
+    background-color: var(--navbar-text);
+    color: var(--navbar-main);
+}
+.menu{
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+@media (max-width:514px){
+    .menu{
+        display: block;
+    }
+    .nom .li {
+        display: none;
+    }
+    .mob{
+        display: flex;
+    }
+}

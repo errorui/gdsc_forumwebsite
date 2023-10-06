@@ -1,0 +1,7 @@
+.searchpage{
+    padding: 2rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
