@@ -13,8 +13,9 @@
     gap:12px;
      background-color: #e9e8e8;
      /* background-color: rgb(205, 195, 195); */
-     box-shadow: 4px 12px 15px #b5b4b4bb;
-    padding: 22px 2px 50px;
+     box-shadow: 4px 22px 25px #b5b4b4bb,
+     -23px -12px 20px  #f3f2f2c2;
+    padding: 22px 2px 60px;
 };
  button{
     text-decoration: none;
@@ -57,4 +58,12 @@ input{
     border-radius: 12px;
     border: 3px solid black;
     padding: 10px;
+}
+@media (max-width:550px) {
+    .formc{
+        width: 300px;
+        padding:2em ;
+        
+    }
+    
 }

@@ -36,13 +36,31 @@
 
 }
 
-.banner-text {
+  
+  .banner-text {
     font-size: 4rem;
+    letter-spacing: 0.1ch;
     color: var(--navbar-main);
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 23px;
-}
+    animation: moveUpDown 0.8s infinite alternate; /* Adjust the animation duration and behavior */
+  }
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-2px);
+
+    }
+    50% {
+      transform: translateY(-5px); /* Adjust the distance as needed */
+    }
+    75%{
+        transform: translate((2px));
+    }
+  }
 
 .bannercontent p {
     font-weight: 500;
@@ -61,8 +79,8 @@
 }
 
 .btn:hover {
-    transform: scale(1.2);
-    transform: translateY(-23px);
+    
+    transform: translateY(-23px) scale(1.01);
 }
 
 .btn-text {

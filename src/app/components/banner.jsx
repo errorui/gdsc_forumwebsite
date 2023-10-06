@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="bannercontent">
                 <h1 className='banner-text'> welcome to W-help</h1>
                 <p>ask your doubts and <br />get instant  <span>answer</span></p>
-                <p>from proffessional</p>
+                <p>from proffessionals</p>
                 <div className="btn">
                 <Link  className="btn-text"href="doubt">ask doubt</Link>
                 

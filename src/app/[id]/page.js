@@ -53,7 +53,13 @@ const page = () => {
                       <div id='username'>
                       {i.username}
                         </div>  </div>
-                    <h4>{i.comment}</h4>
+                        <div className='commetsec'>
+                        <h4>{i.comment} </h4>
+                        <div>
+                            
+                        </div>
+                        </div>
+                  
                 </div>
                 )
                 

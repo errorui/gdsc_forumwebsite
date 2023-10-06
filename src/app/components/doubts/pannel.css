@@ -3,11 +3,19 @@
     align-items: center;
     justify-content: space-between;
 background-color: white;
-    border: 1px solid black;
-    width: 100%;
+    border: 1px solid rgb(10, 4, 30);
+    border-radius: 5px;
+    /* width: 100%; */
     display: flex;
-    padding:30px 10px;
-    gap: 23px;
+    padding:35px 10px;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+.container-doubt:hover{
+    padding: 38px 30px;
+    margin-block: 12px;
+    box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.9),
+    10px 10px 20px rgba(113, 113, 113, 0.4);
 }
 .btn{
     cursor: pointer;
@@ -30,4 +38,6 @@ background-color: white;
 }
 .dyn-a{
     text-transform: capitalize;
+    word-wrap:  break-word;
+    max-width: 10ch;
 }

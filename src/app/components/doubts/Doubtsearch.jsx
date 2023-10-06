@@ -21,9 +21,17 @@ const Searchbox = () => {
   const onsubmit=(e)=>{
     e.preventDefault();
     console.log(formdata)
-    adddoubt(formdata.question,formdata.qbody)
-    setform({qbody:"",question:""})
-    setopne(!open)
+    if (!formdata.question) {
+           alert("enter the question and context")  
+    }else if(!formdata.qbody){
+      alert("enter the context")
+    }
+    else{
+      adddoubt(formdata.question,formdata.qbody)
+      setform({qbody:"",question:""})
+      setopne(!open)
+    }
+    
     
   }
   return (

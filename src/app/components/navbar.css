@@ -90,6 +90,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     align-items: center;
     text-align: center;
     transition: all 400ms ease-out;
+    z-index: 12;
 }
 .mob 
 .nom .li:hover{

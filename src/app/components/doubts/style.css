@@ -1,6 +1,9 @@
+:root{
+    --main-colour:rgb(18, 15, 93);
+}
 .doubtbtn {
     width: 100%;
-    background-color: rgb(52, 47, 183);
+    background-color: var(--main-colour);
     border: none;
     margin-bottom: 1rem;
     padding: 12px;
@@ -10,36 +13,51 @@
     cursor: pointer;
     color: whitesmoke;
     border-radius: 12px;
-    transition: all 100ms ease-in-out;
+    transition: all 300ms ease-in;
 }
 .doubtbtn:hover{
-    background-color: white;
-    color: rgb(52, 47, 183)
+    background-color: rgb(255, 255, 255);
+    letter-spacing: 0.4ch;
+    color: var(--main-colour);
+    border:1px solid  var(--main-colour);
+    transform: scale(1,1.2);
+    margin-bottom: 23px;
+    box-shadow: 0px 0px 25px 6px rgba(57, 177, 233, 0.529) ;
 }
 
 .modal {
-    position: absolute;
-    
-    background: linear-gradient(215deg, rgba(2, 0, 36, 0.759) 0%, rgba(9, 9, 121, 0.7) 34%, rgba(0, 212, 255, 1) 100%);
+    position: fixed;
+    background: linear-gradient( 215deg,rgba(2, 0, 36, 0.759) 0%,rgba(9, 9, 121, 0.7) 34%,
+      rgba(0, 212, 255, 1) 100%
+    );
     width: 100%;
-    height: 140%;
+    height: 100%;
     top: 0;
-    bottom: 0; 
     left: 0;
     display: flex;
-     z-index: 2;
+    z-index: 2;
     justify-content: center;
     align-items: center;
-}
-
-.modalcontent {
+  }
+  
+  .modalcontent {
     background-color: white;
-    padding: 4em 3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    border-radius: 23px;
-}
-
+    border-radius: 10px; 
+  }
+  
+  @media (max-width: 450px) {
+    .modalcontent {
+      width: 90%; 
+      padding:  4rem 2rem 3rem; 
+    }
+    .modalform input{
+        font-size: 0.6rem;
+    }
+  }
+  
 .modalform {
     display: flex;
     flex-direction: column;
@@ -59,18 +77,29 @@
 .modalform input {
     flex-grow: 1;
     padding: 10px;
+    border: 2px solid var(--main-colour);
     border-radius: 12px ;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(124, 142, 142);
+    word-wrap: break-word;
+    max-width: 70ch;
+}
+input:focus{
+    border:  aqua;
 }
 #area{
     border-radius: 12px;
+    padding: 12px;
     
     
     
     
     color: rgb(124, 142, 142);
     margin-block: 10px;
+}
+.modalform input:focus{
+    border-color:  aqua;
+    padding: 20px;
 }
 input::placeholder {
     font-weight: 300;
