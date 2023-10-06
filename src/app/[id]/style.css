@@ -18,6 +18,7 @@
 }
 .comments{
     text-transform: uppercase;
+    background-color: white;
     padding: 25px;
     border: 1px solid rgb(11, 11, 47);
 }
