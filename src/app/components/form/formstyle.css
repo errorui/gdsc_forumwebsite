@@ -20,7 +20,8 @@
     width: 400px;
     border-radius: 12px;
     gap:12px;
-     background-color: #e9e8e8;
+     /* background-color: #e9e8e8; */
+     background-color: red;
      box-shadow: 4px 12px 15px #b5b4b4bb;
     padding: 22px 2px 50px;
 };
