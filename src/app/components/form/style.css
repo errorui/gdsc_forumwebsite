@@ -43,7 +43,7 @@
 
 }.form .btnsub:focus{
     background-color: white;
-    color: aqua;
+    color: rgb(23, 150, 150);
     box-shadow: 4px 15px 5px rgba(158, 198, 223, 0.756) ;
 }
 .form h1{
