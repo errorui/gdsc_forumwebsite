@@ -13,7 +13,7 @@ const Form = () => {
       [e.target.name]:e.target.value  })
       }
   return (
-    <form action="" className='formc' >
+    <div className='formc' >
         <h2 className='head'>contact us</h2>
          
        
@@ -32,7 +32,7 @@ const Form = () => {
           onChange={changeval}></textarea>
           <button type="submit" className='btnsub'>submit</button>
 
-        </form>
+        </div>
   )
 }
 
