@@ -12,7 +12,7 @@
     padding: 2rem;
     font-family: 'Poppins', sans-serif;
  }
-.formc{
+ .homepage .formc{
     display: flex;
     flex-direction: column;
     justify-content: center;
