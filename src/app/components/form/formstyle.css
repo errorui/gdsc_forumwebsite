@@ -12,7 +12,7 @@
     padding: 2rem;
     font-family: 'Poppins', sans-serif;
  }
-.form{
+.formc{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,7 @@
     text-decoration: none;
 
  }
- .form .btnsub{
+ .formc .btnsub{
     width: 250px;
     padding: 12px;
     border: none;
@@ -42,12 +42,13 @@
     box-shadow: 4px 15px 15px rgba(158, 198, 223, 0.756) inset;
     cursor: pointer;
 
-}.form .btnsub:focus{
+}
+.formc .btnsub:focus{
     background-color: white;
     color: rgb(23, 150, 150);
     box-shadow: 4px 15px 5px rgba(158, 198, 223, 0.756) ;
 }
-.form h1{
+.formc h1{
     margin-bottom: 23px;
 }
 

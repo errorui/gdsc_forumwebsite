@@ -13,7 +13,7 @@ const Form = () => {
       [e.target.name]:e.target.value  })
       }
   return (
-    <form action="" className='form' >
+    <form action="" className='formc' >
         <h2 className='head'>contact us</h2>
          
        
