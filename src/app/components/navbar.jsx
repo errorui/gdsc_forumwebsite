@@ -5,20 +5,23 @@ import Link from 'next/link'
 import { BiMenu,BiChevronUp } from "react-icons/bi";
 const Nav = () => {
   const [isselect,setselect]=useState(false);
+  const open=()=>{
+    setselect(!isselect)
+  }
   return (
     <>
     <div className="navbar">
     <div className='logo'>
       <Link href="/" className="logo">w-help</Link></div>
       <ul className="nom">
-        <Link className="li" href="/Contact">contact</Link>
-        <Link className="li" href="doubt">askdoubt</Link>
+        <Link onClick={open} className="li" href="/Contact">contact</Link>
+        <Link onClick={open} className="li" href="doubt">askdoubt</Link>
       
         
       </ul>
       {isselect&&<ul  className={"mob"}>
-        <Link className="li" href="Contact">contact</Link>
-        <Link className="li" href="doubt">askdoubt</Link>
+        <Link onClick={open} className="li" href="Contact">contact</Link>
+        <Link onClick={open} className="li" href="doubt">askdoubt</Link>
      
         
       </ul>}

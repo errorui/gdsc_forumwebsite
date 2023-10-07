@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react'
 import "./formstyle.css"
+
+
 const Form = () => {
     
     const [formData,setData]=useState({
@@ -8,6 +10,7 @@ const Form = () => {
         email:"",
         area:""
       })
+      
       const changeval=(e)=>{
         setData({...formData,
       [e.target.name]:e.target.value  })
@@ -30,7 +33,7 @@ const Form = () => {
           placeholder='enter your email'/>
           <textarea name="areaa" id="area" cols="30" rows="10" placeholder='your issue'
           onChange={changeval}></textarea>
-          <button type="submit" className='btnsub'>submit</button>
+          <button  type="submit" className='btnsub'>submit</button>
 
         </div>
   )
