@@ -69,10 +69,14 @@
 
 }
 .usercom{
-    /* background-color: greenyellow; */
+    
     font-size: 0.8rem;
     padding: 1em 2em;
     border: 1px dotted  rgb(19, 36, 61);
+    transition: all 400ms ease-in;
+}
+.usercom:hover{
+    padding: 1.5rem;
 }
 .userinfo{
     font-weight: 300;

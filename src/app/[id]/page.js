@@ -9,6 +9,7 @@ import { BiUser } from "react-icons/bi";
 const page = () => {
     const [comt,setcommets]=useState("")
     const change=(e)=>{
+
         setcommets(e.target.value)
     }
     const router = useRouter();
@@ -19,13 +20,19 @@ const page = () => {
 
     const title = doubt[index].text;
     const para = doubt[index].body;
-    const user="you"
+    
     const comment=useliststore(store=>store.comments)
     const addcomment=useliststore(store=>store.addcomment)
+    const user="you"
        const usercomment= ()=>{
-        console.log(comt)
-        addcomment(user,comt)
-        setcommets("")
+
+        if (!comt) {
+            alert("field must contain at least 1ch")
+        }else{
+            addcomment(user,comt)
+            setcommets("")
+        }
+       
       }
 
     return (<>
@@ -37,6 +44,7 @@ const page = () => {
         <div className="comments">
             <h3>comments</h3>
             <div className='input'><input
+            
             value={comt} 
             type="text" onChange={change} placeholder='enter your comment' />
                 <button onClick={

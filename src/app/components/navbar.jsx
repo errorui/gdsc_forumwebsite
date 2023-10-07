@@ -14,14 +14,18 @@ const Nav = () => {
     <div className='logo'>
       <Link href="/" className="logo">w-help</Link></div>
       <ul className="nom">
+        
+        <Link onClick={open} className="li" href="/doubt">askdoubt</Link>
         <Link onClick={open} className="li" href="/Contact">contact</Link>
-        <Link onClick={open} className="li" href="doubt">askdoubt</Link>
+        <Link onClick={open} className="li" href="/signup">sign up</Link>
       
         
       </ul>
       {isselect&&<ul  className={"mob"}>
-        <Link onClick={open} className="li" href="Contact">contact</Link>
-        <Link onClick={open} className="li" href="doubt">askdoubt</Link>
+       
+        <Link onClick={open} className="li" href="/doubt">askdoubt</Link>
+        <Link onClick={open} className="li" href="/Contact">contact</Link>
+        <Link onClick={open} className="li" href="/signup">sign up</Link>
      
         
       </ul>}

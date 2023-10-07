@@ -17,12 +17,13 @@
 }
 .doubtbtn:hover{
     background-color: rgb(255, 255, 255);
-    letter-spacing: 0.4ch;
+    letter-spacing: 0.2ch;
     color: var(--main-colour);
     border:1px solid  var(--main-colour);
     transform: scale(1,1.2);
-    margin-bottom: 23px;
-    box-shadow: 0px 0px 25px 6px rgba(57, 177, 233, 0.529) ;
+    margin-top: 13px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 25px 6px rgba(12, 119, 169, 0.529) ;
 }
 
 .modal {
@@ -84,9 +85,7 @@
     word-wrap: break-word;
     max-width: 70ch;
 }
-input:focus{
-    border:  aqua;
-}
+
 #area{
     border-radius: 12px;
     padding: 12px;
@@ -98,7 +97,7 @@ input:focus{
     margin-block: 10px;
 }
 .modalform input:focus{
-    border-color:  aqua;
+    
     padding: 20px;
 }
 input::placeholder {
@@ -123,7 +122,7 @@ input::placeholder {
     transition: all 500ms ease-in;
 }
 .plus:hover{
-    transform: translateY(-5px) scale(1.2);
+    transform: translateY(-5px) ;
     box-shadow: 8px 15px 12px rgba(19, 36, 61, 0.719);
     margin-block:12px ;
     border: 1px solid rgb(19, 36, 61);

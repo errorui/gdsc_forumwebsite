@@ -51,7 +51,7 @@ const Searchbox = () => {
             <textarea name="qbody"
               value={formdata.qbody}
               onChange={changeval}
-              id="area" cols="30" rows="10" placeholder='your body'></textarea>
+              id="area" cols="30" rows="10" placeholder='question body'></textarea>
 
             <div className='plus'> <BiPlus className='x'onClick={onsubmit} ></BiPlus></div>
           </div>
