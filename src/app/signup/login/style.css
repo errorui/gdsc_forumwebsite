@@ -68,7 +68,7 @@ input{
 }
 @media (max-width:550px) {
   .form_login{
-      width: 300px;
+      width: 350px;
       height: 350px;
       padding:2rem ;
       
